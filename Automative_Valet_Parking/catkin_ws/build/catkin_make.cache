@@ -1,0 +1,2 @@
+MORAI-DriveExample_ROS/morai_standard:MORAI-ROS_morai_msgs:avp:integration_test:rrt_drive1:rrt_drive2:ssafy_1:ssafy_2:ssafy_3
+-DCATKIN_DEVEL_PREFIX=/home/ssafy/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ssafy/catkin_ws/install -G Unix Makefiles

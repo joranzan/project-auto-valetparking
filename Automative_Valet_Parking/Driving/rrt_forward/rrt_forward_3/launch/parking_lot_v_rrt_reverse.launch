@@ -1,0 +1,15 @@
+<launch>
+    <node pkg="rrt_forward_2" type="mgeo_pub.py" name="mgeo_pub"  />
+    <node pkg="rrt_forward_2" type="gpsimu_parser.py" name="gpsimu_parser" />
+    <node pkg="rrt_forward_3" type="assignment_star.py" name="assignment_star" />
+    <node pkg="rrt_forward_2" type="global_path_pub_v_rrt.py" name="global_path_pub_v_rrt"  />
+    <node pkg="rrt_forward_2" type="mgeo_dijkstra_path_parking.py" name="mgeo_dijkstra_path"  />
+    <node pkg="rrt_forward_3" type="map_change_controller.py" name="map_change_controller"  />
+    <node pkg="rrt_forward_3" type="lattice_planner.py" name="lattice_planner" output="screen" args="/Object_topic"/>
+    <node pkg="rrt_forward_2" type="local_path_pub.py" name="local_path_pub" />
+    <!-- <node pkg="rrt_forward_3" type="advanced_purepursuit_rear.py" name="advanced_purepursuit_rear"  />
+    <node pkg="rrt_forward_3" type="srv_event_cmd.py" name="srv_event_cmd" /> -->
+    <node pkg="rrt_forward_2" type="tf_pub.py" name="tf"  />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rrt_forward_2)/rviz/kcity_rviz.rviz" />
+</launch>

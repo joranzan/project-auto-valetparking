@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="avp" type="mgeo_pub.py" name="mgeo_pub"  />
+    <node pkg="avp" type="gpsimu_parser.py" name="gpsimu_parser" />
+    <node pkg="avp" type="assignment_star.py" name="assignment_star" />
+    <node pkg="avp" type="global_path_pub.py" name="global_path_pub"  />
+    <node pkg="avp" type="local_path_pub.py" name="local_path_pub" />
+    <node pkg="avp" type="advanced_purepursuit_rear.py" name="advanced_purepursuit_rear"  />
+    <node pkg="avp" type="srv_event_cmd.py" name="srv_event_cmd" />
+    <node pkg="avp" type="tf_pub.py" name="tf"  />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find avp)/rviz/kcity_rviz.rviz" />
+</launch>

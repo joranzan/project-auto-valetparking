@@ -1,0 +1,8 @@
+prefix=/home/ssafy/catkin_ws/devel
+
+Name: integration_test
+Description: Description of integration_test
+Version: 0.0.0
+Cflags: -I/home/ssafy/catkin_ws/devel/include
+Libs: -L${prefix}/lib -lintegration_test
+Requires: message_generation roscpp std_msgs

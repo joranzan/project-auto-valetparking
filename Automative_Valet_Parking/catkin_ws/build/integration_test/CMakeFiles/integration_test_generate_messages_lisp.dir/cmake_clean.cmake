@@ -1,0 +1,9 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/integration_test_generate_messages_lisp"
+  "/home/ssafy/catkin_ws/devel/share/common-lisp/ros/integration_test/msg/testmsg.lisp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/integration_test_generate_messages_lisp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

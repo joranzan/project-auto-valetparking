@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="rrt_drive1" type="mgeo_pub.py" name="mgeo_pub"  />
+    <node pkg="rrt_drive1" type="gpsimu_parser.py" name="gpsimu_parser" />
+    <node pkg="rrt_drive1" type="tf_pub.py" name="tf"  />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rrt_drive2)/rviz/lane_detection_rviz.rviz" />
+    <node pkg="integration_test" type="testInit" name="testinit" output="screen" />
+</launch>
